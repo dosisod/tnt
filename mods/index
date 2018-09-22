@@ -1,2 +1,4 @@
-nmap;
+apt-get update;apt-get update $@
+apt-get install;apt-get install $@
 ports;netstat -plant
+pid;px aux | grep $@
