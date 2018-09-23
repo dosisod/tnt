@@ -1,4 +1,5 @@
-apt-get update;apt-get update $@
-apt-get install;apt-get install $@
+apt-get update;apt-get update
+apt-get upgrade <PROGRAM>;
+apt-get install <PROGRAM>;apt-get install
 ports;netstat -plant
-pid;px aux | grep $@
+pid <NAME>;ps aux | grep
