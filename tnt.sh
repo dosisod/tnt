@@ -37,6 +37,7 @@ function input() {
 	do
 		echo -n " >>> "
 		read input
+		echo "$input" >> .tnt_history
 		echo -e "\033[0;97;41mRUNNING:\033[0m ${coms[$(echo $input | awk '{print $1}')]}$(echo "$input" | awk '{$1=""; print $0}')\n"
 		eval "${coms[$(echo $input | awk '{print $1}')]}$(echo "$input" | awk '{$1=""; print $0}')"
 		echo ""
